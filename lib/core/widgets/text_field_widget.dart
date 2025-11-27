@@ -4,8 +4,8 @@ import 'package:tabnews/core/mixin/theme_mixin.dart';
 class TextFieldWidget extends StatelessWidget with ThemeMixin {
   const TextFieldWidget({
     required this.hintText,
-    this.keyboardType = TextInputType.multiline,
-    this.textAlignVertical = TextAlignVertical.center,
+    this.keyboardType = .multiline,
+    this.textAlignVertical = .center,
     this.expands = false,
     this.controller,
     this.maxLines,
@@ -26,8 +26,8 @@ class TextFieldWidget extends StatelessWidget with ThemeMixin {
     final metrics = getMetrics();
 
     final border = OutlineInputBorder(
-      borderRadius: BorderRadius.all(metrics.radius / 1.2),
       borderSide: metrics.border,
+      borderRadius: .all(metrics.radius / 1.2),
     );
 
     return TextFormField(
@@ -43,7 +43,7 @@ class TextFieldWidget extends StatelessWidget with ThemeMixin {
         isDense: true,
         hintText: hintText,
         hintStyle: theme.textTheme.bodyMedium?.copyWith(
-          color: colors.onSurface.withOpacity(0.6),
+          color: colors.onSurface.withValues(alpha: 0.6),
         ),
         fillColor: colors.surface,
         iconColor: colors.onSurface,

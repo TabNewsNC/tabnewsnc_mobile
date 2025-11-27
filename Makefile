@@ -14,11 +14,11 @@ icons:
 
 splash:
 	@echo "Generating splash screen"
-	@dart run flutter_native_splash:create
+	@fvm dart run flutter_native_splash:create
 
 runner:
 	@echo "Running build-runner"
-	@dart run build_runner build -d
+	@fvm dart run build_runner build -d
 
 upgrade:
 	@echo "Upgrading project"

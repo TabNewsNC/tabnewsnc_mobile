@@ -16,7 +16,7 @@ class PaddingWidget extends StatelessWidget with ThemeMixin {
     final metrics = getMetrics();
 
     return Padding(
-      padding: padding ?? EdgeInsets.all(metrics.medium),
+      padding: padding ?? .all(metrics.medium),
       child: child,
     );
   }

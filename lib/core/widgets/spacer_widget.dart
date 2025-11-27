@@ -17,18 +17,18 @@ class SpacerWidget extends StatelessWidget with ThemeMixin {
 
     late double value;
     switch (size) {
-      case SpacerWidgetSizes.small:
+      case .small:
         value = metrics.small;
-      case SpacerWidgetSizes.medium:
+      case .medium:
         value = metrics.medium;
-      case SpacerWidgetSizes.large:
+      case .large:
         value = metrics.large;
     }
 
     switch (direction) {
-      case Axis.vertical:
+      case .vertical:
         return SizedBox(height: value);
-      case Axis.horizontal:
+      case .horizontal:
         return SizedBox(width: value);
     }
   }

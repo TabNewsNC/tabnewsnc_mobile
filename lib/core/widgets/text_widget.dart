@@ -5,7 +5,7 @@ class TextWidget extends StatelessWidget with ThemeMixin {
   const TextWidget(
     this.text, {
     this.maxLines = 1,
-    this.size = TextWidgetSizes.bodyMedium,
+    this.size = .bodyMedium,
     this.color,
     super.key,
   });
@@ -22,30 +22,30 @@ class TextWidget extends StatelessWidget with ThemeMixin {
 
     late TextStyle ts;
     switch (size) {
-      case TextWidgetSizes.bodySmall:
+      case .bodySmall:
         ts = theme.textTheme.bodySmall!;
-      case TextWidgetSizes.bodyMedium:
+      case .bodyMedium:
         ts = theme.textTheme.bodyMedium!;
-      case TextWidgetSizes.bodyLarge:
+      case .bodyLarge:
         ts = theme.textTheme.bodyLarge!;
-      case TextWidgetSizes.titleSmall:
+      case .titleSmall:
         ts = theme.textTheme.titleSmall!;
-      case TextWidgetSizes.titleMedium:
+      case .titleMedium:
         ts = theme.textTheme.titleMedium!;
-      case TextWidgetSizes.titleLarge:
+      case .titleLarge:
         ts = theme.textTheme.titleLarge!;
-      case TextWidgetSizes.headlineSmall:
+      case .headlineSmall:
         ts = theme.textTheme.headlineSmall!;
-      case TextWidgetSizes.headlineMedium:
+      case .headlineMedium:
         ts = theme.textTheme.headlineMedium!;
-      case TextWidgetSizes.headlineLarge:
+      case .headlineLarge:
         ts = theme.textTheme.headlineLarge!;
     }
 
     return Text(
       text,
       maxLines: maxLines,
-      overflow: TextOverflow.ellipsis,
+      overflow: .ellipsis,
       style: ts.copyWith(color: color ?? colors.text),
     );
   }

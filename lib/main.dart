@@ -12,8 +12,7 @@ import 'package:tabnews/core/theme/app_theme.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  _setupChrome();
-  await _setupStorage();
+  await Future.wait([_setupChrome(), _setupStorage()]);
   runApp(const MyApp());
 }
 
@@ -27,14 +26,8 @@ class MyApp extends StatelessWidget {
       initialBinding: InitialBinding(),
       initialRoute: AppRoutes.initial,
       getPages: AppPages.pages,
-      theme: const AppTheme(
-        isDark: false,
-        colors: AppThemeColors.modern,
-      ).get(),
-      darkTheme: const AppTheme(
-        isDark: true,
-        colors: AppThemeColors.modern,
-      ).get(),
+      theme: const AppTheme(isDark: false, colors: .modern).get(),
+      darkTheme: const AppTheme(isDark: true, colors: .modern).get(),
       debugShowCheckedModeBanner: false,
       locale: const Locale('pt', 'BR'),
       builder: (context, child) {
@@ -45,9 +38,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-void _setupChrome() {
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+Future<void> _setupChrome() async {
+  await Future.wait([
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge),
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]),
+  ]);
+
   _setSystemUI();
 }
 
@@ -55,10 +51,10 @@ void _setSystemUI([BuildContext? context]) {
   final theme = context?.theme;
   Brightness? brightness;
   switch (theme?.brightness) {
-    case Brightness.light:
-      brightness = Brightness.dark;
-    case Brightness.dark:
-      brightness = Brightness.light;
+    case .light:
+      brightness = .dark;
+    case .dark:
+      brightness = .light;
     default:
       brightness = null;
   }

@@ -5,11 +5,11 @@ publish_to: "none"
 homepage: https://softyes.com.br
 repository: https://github.com/softyesti/tabnews_client
 
-version: 0.3.0+3
+version: 0.3.1+4
 
 environment:
-  sdk: ^3.7.2
-  flutter: ^3.29.3
+  sdk: ^3.10.1
+  flutter: ^3.38.3
 
 dependencies:
   flutter:
@@ -28,14 +28,14 @@ dependencies:
   solar_icons: ^0.0.5
   hive: ^2.2.3
   path_provider: ^2.1.4
-  share_plus: ^11.0.0
+  share_plus: ^12.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^5.0.0
-  very_good_analysis: ^7.0.0
+  flutter_lints: ^6.0.0
+  very_good_analysis: ^10.0.0
   dart_mappable_builder: ^4.0.1
   build_runner: ^2.4.6
   flutter_launcher_icons: ^0.14.3
@@ -56,7 +56,7 @@ flutter_launcher_icons:
   adaptive_icon_background: "assets/adaptive_icon_bg.png"
   min_sdk_android: 21
   web:
-    generate: true
+    generate: false
     image_path: "assets/icon.png"
     background_color: "#0D1117"
     theme_color: "#0D1117"

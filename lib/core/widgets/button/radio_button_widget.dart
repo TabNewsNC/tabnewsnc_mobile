@@ -24,8 +24,8 @@ class RadioButtonWidget extends StatelessWidget with ThemeMixin {
     var color = Colors.transparent;
     var size = TextWidgetSizes.bodyMedium;
     if (isActive) {
+      size = .titleMedium;
       color = colors.border;
-      size = TextWidgetSizes.titleMedium;
     }
 
     return TouchableWidget(
@@ -36,14 +36,14 @@ class RadioButtonWidget extends StatelessWidget with ThemeMixin {
         padding: metrics.buttonPadding,
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.all(metrics.radius / 1.2),
+          borderRadius: .all(metrics.radius / 1.2),
         ),
         child: Row(
           children: [
             _IndicatorWidget(isActive: isActive),
             const SpacerWidget(
-              direction: Axis.horizontal,
-              size: SpacerWidgetSizes.small,
+              size: .small,
+              direction: .horizontal,
             ),
             TextWidget(text, size: size),
           ],
@@ -69,18 +69,18 @@ class _IndicatorWidget extends StatelessWidget with ThemeMixin {
     return Container(
       width: metrics.icon,
       height: metrics.icon,
-      padding: const EdgeInsets.all(4),
+      padding: const .all(4),
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.circular(metrics.icon),
-        border: Border.fromBorderSide(metrics.border.copyWith(color: color)),
+        borderRadius: .circular(metrics.icon),
+        border: .fromBorderSide(metrics.border.copyWith(color: color)),
       ),
       child: Visibility(
         visible: isActive,
         child: Container(
           decoration: BoxDecoration(
             color: colors.onPrimary,
-            borderRadius: BorderRadius.circular(metrics.icon),
+            borderRadius: .circular(metrics.icon),
           ),
         ),
       ),

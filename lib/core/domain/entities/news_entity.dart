@@ -3,7 +3,7 @@ import 'package:tabnews/core/domain/hooks.dart';
 
 part 'news_entity.mapper.dart';
 
-@MappableClass(caseStyle: CaseStyle.snakeCase)
+@MappableClass(caseStyle: .snakeCase)
 class NewsEntity with NewsEntityMappable {
   const NewsEntity({
     required this.id,

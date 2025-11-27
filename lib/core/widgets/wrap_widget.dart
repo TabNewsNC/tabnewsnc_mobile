@@ -3,9 +3,9 @@ import 'package:tabnews/core/mixin/theme_mixin.dart';
 
 class WrapWidget extends StatelessWidget with ThemeMixin {
   const WrapWidget({
-    this.direction = Axis.vertical,
-    this.alignment = WrapAlignment.start,
-    this.spacing = WrapWidgetSpacings.medium,
+    this.spacing = .medium,
+    this.alignment = .start,
+    this.direction = .vertical,
     this.children = const [],
     super.key,
   });
@@ -21,11 +21,11 @@ class WrapWidget extends StatelessWidget with ThemeMixin {
 
     late double value;
     switch (spacing) {
-      case WrapWidgetSpacings.small:
+      case .small:
         value = metrics.small;
-      case WrapWidgetSpacings.medium:
+      case .medium:
         value = metrics.medium;
-      case WrapWidgetSpacings.large:
+      case .large:
         value = metrics.large;
     }
 

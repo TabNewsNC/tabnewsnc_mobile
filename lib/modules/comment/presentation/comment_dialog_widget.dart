@@ -23,16 +23,16 @@ class CommentDialogWidget extends StatelessWidget with ThemeMixin {
     final editor = MarkdownEditor(controller: controller);
 
     final borderRadius = BorderRadius.all(metrics.radius).copyWith(
-      bottomLeft: Radius.zero,
-      bottomRight: Radius.zero,
+      bottomLeft: .zero,
+      bottomRight: .zero,
     );
 
     return BlurWidget(
       borderRadius: borderRadius,
       child: CardWidget(
-        height: double.infinity,
+        height: .infinity,
         borderRadius: borderRadius,
-        padding: EdgeInsets.symmetric(horizontal: metrics.medium).copyWith(
+        padding: .symmetric(horizontal: metrics.medium).copyWith(
           bottom: viewInsets.bottom != 0 ? metrics.medium : 0,
         ),
         child: Column(
@@ -59,7 +59,7 @@ class _AppBarWidget extends StatelessWidget {
       left: false,
       right: false,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: .spaceBetween,
         children: [
           IconButtonWidget(
             icon: Ionicons.chevron_down_outline,
@@ -83,7 +83,7 @@ class _BodyWidget extends StatelessWidget {
     return TextFieldWidget(
       hintText: 'Escreva seu comentário',
       controller: controller,
-      textAlignVertical: TextAlignVertical.top,
+      textAlignVertical: .top,
       expands: true,
     );
   }

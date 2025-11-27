@@ -5,7 +5,7 @@ final class ThemeLightColors extends ThemeColors {
   const ThemeLightColors({
     super.primary = const Color(0xFF0969da),
     super.onPrimary = const Color(0xFFFFFFFF),
-    super.secondary = const Color.fromRGBO(255, 255, 255, 0.8),
+    super.secondary = const .fromRGBO(255, 255, 255, 0.8),
     super.onSecondary = const Color(0xFF1F2328),
     super.tertiary = const Color(0xFFF6F8FA),
     super.onTertiary = const Color(0xFF24292F),
@@ -28,7 +28,7 @@ final class ThemeDarkColors extends ThemeColors {
   const ThemeDarkColors({
     super.primary = const Color(0xFF2F81F7),
     super.onPrimary = const Color(0xFFE6EDF3),
-    super.secondary = const Color.fromRGBO(13, 17, 23, 0.8),
+    super.secondary = const .fromRGBO(13, 17, 23, 0.8),
     super.onSecondary = const Color(0xFFE6EDF3),
     super.tertiary = const Color(0xFF21262D),
     super.onTertiary = const Color(0xFFC9D1D9),

@@ -29,7 +29,7 @@ mixin DialogMixin {
   }) async {
     final context = Get.context!;
     final box = context.findRenderObject()! as RenderBox;
-    final origin = box.localToGlobal(Offset.zero) & box.size;
+    final origin = box.localToGlobal(.zero) & box.size;
 
     if (text != null) await Share.share(text, sharePositionOrigin: origin);
     if (uri != null) await Share.shareUri(uri, sharePositionOrigin: origin);

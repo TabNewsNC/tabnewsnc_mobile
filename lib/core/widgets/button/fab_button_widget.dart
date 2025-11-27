@@ -23,7 +23,7 @@ class FabButtonWidget extends StatelessWidget with ThemeMixin {
       onPressed: onPressed,
       bgColor: colors.tertiary,
       fgColor: colors.onTertiary,
-      padding: EdgeInsets.all(metrics.medium / 1.4),
+      padding: .all(metrics.medium / 1.4),
     );
   }
 }

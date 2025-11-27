@@ -34,12 +34,12 @@ class _FilterBottomSheetWidgetState extends State<FilterBottomSheetWidget> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: .min,
+      crossAxisAlignment: .start,
       children: [
         const TextWidget(
           'Selecione o filtro',
-          size: TextWidgetSizes.headlineMedium,
+          size: .headlineMedium,
         ),
         const SpacerWidget(),
         RadioGroupWidget<NewsFilterEnum>(
@@ -47,16 +47,16 @@ class _FilterBottomSheetWidgetState extends State<FilterBottomSheetWidget> {
           onSelected: (value) => setState(() => selected = value),
           items: const [
             RadioGroupWidgetItem(
+              value: .old,
               text: 'Antigos',
-              value: NewsFilterEnum.old,
             ),
             RadioGroupWidgetItem(
+              value: .recent,
               text: 'Recentes',
-              value: NewsFilterEnum.recent,
             ),
             RadioGroupWidgetItem(
+              value: .relevant,
               text: 'Relevantes',
-              value: NewsFilterEnum.relevant,
             ),
           ],
         ),

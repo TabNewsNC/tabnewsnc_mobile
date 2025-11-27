@@ -42,7 +42,7 @@ class NewsPage extends GetView<NewsPageController> {
         ),
         slivers: [
           if (news != null) _NewsWidget(news: news),
-          const _SpacerWidget(size: SpacerWidgetSizes.large),
+          const _SpacerWidget(size: .large),
           _RepliesTitleWidget(key: repliesKey),
           const _SpacerWidget(),
           if (news != null) _RepliesWidget(news: news, replies: replies),
@@ -104,7 +104,7 @@ class _FabButtonsWidget extends StatelessWidget with ThemeMixin {
     final metrics = getMetrics();
 
     return WrapWidget(
-      spacing: WrapWidgetSpacings.small,
+      spacing: .small,
       children: [
         FabButtonWidget(
           icon: Ionicons.chevron_up_outline,
@@ -161,7 +161,7 @@ class _RepliesTitleWidget extends StatelessWidget {
     return const SliverToBoxAdapter(
       child: TextWidget(
         'Respostas',
-        size: TextWidgetSizes.titleLarge,
+        size: .titleLarge,
       ),
     );
   }
@@ -180,7 +180,7 @@ class _RepliesWidget extends GetView<NewsPageController> {
   Widget build(BuildContext context) {
     return SliverList.separated(
       itemCount: replies.length,
-      separatorBuilder: (_, __) => const SpacerWidget(),
+      separatorBuilder: (_, _) => const SpacerWidget(),
       itemBuilder: (_, index) {
         final comment = replies[index];
         final params = {

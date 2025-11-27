@@ -1,10 +1,11 @@
 import 'package:dart_mappable/dart_mappable.dart';
 
-@MappableEnum(caseStyle: CaseStyle.snakeCase, mode: ValuesMode.named)
+@MappableEnum(caseStyle: CaseStyle.snakeCase)
 enum NewsFilterEnum {
   old('old'),
   recent('new'),
-  relevant('relevant');
+  relevant('relevant')
+  ;
 
   const NewsFilterEnum(this.value);
   final String value;

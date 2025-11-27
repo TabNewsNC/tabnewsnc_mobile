@@ -90,29 +90,27 @@ base class ThemeColors extends ThemeExtension<ThemeColors> {
     covariant ThemeExtension<ThemeColors>? other,
     double t,
   ) {
-    if (other is! ThemeColors) {
-      return this;
-    }
+    if (other is! ThemeColors) return this;
 
     return ThemeColors(
-      primary: Color.lerp(primary, other.primary, t)!,
-      onPrimary: Color.lerp(onPrimary, other.onPrimary, t)!,
-      secondary: Color.lerp(secondary, other.secondary, t)!,
-      onSecondary: Color.lerp(onSecondary, other.onSecondary, t)!,
-      tertiary: Color.lerp(tertiary, other.tertiary, t)!,
-      onTertiary: Color.lerp(onTertiary, other.onTertiary, t)!,
-      success: Color.lerp(success, other.success, t)!,
-      onSuccess: Color.lerp(onSuccess, other.onSuccess, t)!,
-      warning: Color.lerp(warning, other.warning, t)!,
-      onWarning: Color.lerp(onWarning, other.onWarning, t)!,
-      danger: Color.lerp(danger, other.danger, t)!,
-      onDanger: Color.lerp(onDanger, other.onDanger, t)!,
-      surface: Color.lerp(surface, other.surface, t)!,
-      onSurface: Color.lerp(onSurface, other.onSurface, t)!,
-      border: Color.lerp(border, other.border, t)!,
-      text: Color.lerp(text, other.text, t)!,
-      textAlt: Color.lerp(textAlt, other.textAlt, t)!,
-      background: Color.lerp(background, other.background, t)!,
+      primary: .lerp(primary, other.primary, t)!,
+      onPrimary: .lerp(onPrimary, other.onPrimary, t)!,
+      secondary: .lerp(secondary, other.secondary, t)!,
+      onSecondary: .lerp(onSecondary, other.onSecondary, t)!,
+      tertiary: .lerp(tertiary, other.tertiary, t)!,
+      onTertiary: .lerp(onTertiary, other.onTertiary, t)!,
+      success: .lerp(success, other.success, t)!,
+      onSuccess: .lerp(onSuccess, other.onSuccess, t)!,
+      warning: .lerp(warning, other.warning, t)!,
+      onWarning: .lerp(onWarning, other.onWarning, t)!,
+      danger: .lerp(danger, other.danger, t)!,
+      onDanger: .lerp(onDanger, other.onDanger, t)!,
+      surface: .lerp(surface, other.surface, t)!,
+      onSurface: .lerp(onSurface, other.onSurface, t)!,
+      border: .lerp(border, other.border, t)!,
+      text: .lerp(text, other.text, t)!,
+      textAlt: .lerp(textAlt, other.textAlt, t)!,
+      background: .lerp(background, other.background, t)!,
     );
   }
 }

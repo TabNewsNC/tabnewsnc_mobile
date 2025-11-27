@@ -18,7 +18,7 @@ class CommentPage extends StatefulWidget {
 
 class _CommentPageState extends State<CommentPage> with ThemeMixin {
   final scrollController = ScrollController();
-  final detailKey = GlobalKey();
+  final GlobalKey<State<StatefulWidget>> detailKey = GlobalKey();
 
   @override
   void initState() {
@@ -47,26 +47,26 @@ class _CommentPageState extends State<CommentPage> with ThemeMixin {
           child: DetailedNewsCardWidget(key: detailKey, news: controller.news),
         ),
         const SliverToBoxAdapter(
-          child: SpacerWidget(size: SpacerWidgetSizes.large),
+          child: SpacerWidget(size: .large),
         ),
         SliverToBoxAdapter(
           child: DetailedNewsCardWidget(news: controller.comment),
         ),
         const SliverToBoxAdapter(
-          child: SpacerWidget(size: SpacerWidgetSizes.large),
+          child: SpacerWidget(size: .large),
         ),
         const SliverToBoxAdapter(
-          child: TextWidget('Respostas', size: TextWidgetSizes.titleMedium),
+          child: TextWidget('Respostas', size: .titleMedium),
         ),
         const SliverToBoxAdapter(child: SpacerWidget()),
         SliverList.separated(
           itemCount: controller.comment.children.length,
-          separatorBuilder: (_, __) => const SpacerWidget(),
+          separatorBuilder: (_, _) => const SpacerWidget(),
           itemBuilder: (_, index) {
             final comment = controller.comment.children[index];
 
-            void onPressed() {
-              Get.toNamed<void>(
+            Future<void> onPressed() async {
+              await Get.toNamed<void>(
                 AppRoutes.comment,
                 preventDuplicates: false,
               );

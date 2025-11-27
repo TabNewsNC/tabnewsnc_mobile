@@ -7,10 +7,10 @@ import 'package:tabnews/modules/favorite/presentation/favorite_page_controller.d
 import 'package:tabnews/modules/news/news_usecases.dart';
 
 class NewsPageController extends GetxController with DialogMixin {
-  final _newsUsecases = Get.find<NewsUsecases>();
-  final _favoriteUsecases = Get.find<FavoriteUsecases>();
+  final NewsUsecases _newsUsecases = Get.find<NewsUsecases>();
+  final FavoriteUsecases _favoriteUsecases = Get.find<FavoriteUsecases>();
 
-  final _favoritePageController = Get.find<FavoritePageController>();
+  final FavoritePageController _favoritePageController = Get.find<FavoritePageController>();
 
   late String _id;
   late String _user;

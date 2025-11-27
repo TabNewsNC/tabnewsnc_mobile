@@ -26,7 +26,7 @@ class AppTheme {
       dividerColor: colors.border,
       extensions: [colors, metrics],
       iconTheme: IconThemeData(color: colors.text),
-      brightness: isDark ? Brightness.dark : Brightness.light,
+      brightness: isDark ? .dark : .light,
       colorScheme: ColorScheme.fromSeed(
         seedColor: colors.primary,
         primary: colors.primary,
@@ -50,48 +50,48 @@ class AppTheme {
       textTheme: GoogleFonts.interTextTheme(theme.textTheme).copyWith(
         bodySmall: GoogleFonts.inter(
           fontSize: 12,
-          fontWeight: FontWeight.normal,
           color: colors.text,
+          fontWeight: .normal,
         ),
         bodyMedium: GoogleFonts.inter(
           fontSize: 14,
-          fontWeight: FontWeight.normal,
           color: colors.text,
+          fontWeight: .normal,
         ),
         bodyLarge: GoogleFonts.inter(
           fontSize: 16,
-          fontWeight: FontWeight.normal,
           color: colors.text,
+          fontWeight: .normal,
         ),
         titleSmall: GoogleFonts.inter(
           fontSize: 12,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
         titleMedium: GoogleFonts.inter(
           fontSize: 14,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
         titleLarge: GoogleFonts.inter(
           fontSize: 16,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
         headlineSmall: GoogleFonts.inter(
           fontSize: 16,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
         headlineMedium: GoogleFonts.inter(
           fontSize: 18,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
         headlineLarge: GoogleFonts.inter(
           fontSize: 24,
-          fontWeight: FontWeight.bold,
           color: colors.text,
+          fontWeight: .bold,
         ),
       ),
     );

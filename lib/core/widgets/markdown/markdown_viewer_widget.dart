@@ -20,7 +20,7 @@ class MarkdownViewerWidget extends StatelessWidget {
       controller: scrollController,
       selectable: true,
       shrinkWrap: true,
-      padding: EdgeInsets.zero,
+      padding: .zero,
       physics: const NeverScrollableScrollPhysics(),
       softLineBreak: true,
       extensionSet: md.ExtensionSet(

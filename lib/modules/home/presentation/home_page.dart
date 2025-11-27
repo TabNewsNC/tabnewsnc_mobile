@@ -44,7 +44,7 @@ class HomePage extends GetView<HomePageController> with DialogMixin {
         body: ListView.separated(
           controller: scrollController,
           itemCount: news.length,
-          separatorBuilder: (_, __) => const SpacerWidget(),
+          separatorBuilder: (_, _) => const SpacerWidget(),
           itemBuilder: (_, index) {
             final item = news[index];
             final params = {

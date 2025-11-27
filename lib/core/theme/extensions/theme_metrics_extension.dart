@@ -89,9 +89,7 @@ base class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
     covariant ThemeExtension<ThemeMetrics>? other,
     double t,
   ) {
-    if (other is! ThemeMetrics) {
-      return this;
-    }
+    if (other is! ThemeMetrics) return this;
 
     return ThemeMetrics(
       small: lerpDouble(small, other.small, t)!,
@@ -100,17 +98,15 @@ base class ThemeMetrics extends ThemeExtension<ThemeMetrics> {
       icon: lerpDouble(icon, other.icon, t)!,
       blur: lerpDouble(blur, other.blur, t)!,
       border: t < 0.5 ? border : other.border,
-      radius: Radius.lerp(radius, other.radius, t)!,
-      shadow: BoxShadow.lerp(shadow, other.shadow, t)!,
-      header: Size.lerp(header, other.header, t)!,
-      footer: Size.lerp(footer, other.footer, t)!,
-      button: Size.lerp(button, other.button, t)!,
-      buttonPadding: EdgeInsets.lerp(buttonPadding, other.buttonPadding, t)!,
-      card: card.copyWith(
-        padding: EdgeInsets.lerp(card.padding, other.card.padding, t),
-      ),
-      field: Size.lerp(field, other.field, t)!,
-      fieldPadding: EdgeInsets.lerp(fieldPadding, other.fieldPadding, t)!,
+      radius: .lerp(radius, other.radius, t)!,
+      shadow: .lerp(shadow, other.shadow, t)!,
+      header: .lerp(header, other.header, t)!,
+      footer: .lerp(footer, other.footer, t)!,
+      button: .lerp(button, other.button, t)!,
+      buttonPadding: .lerp(buttonPadding, other.buttonPadding, t)!,
+      card: card.copyWith(padding: .lerp(card.padding, other.card.padding, t)),
+      field: .lerp(field, other.field, t)!,
+      fieldPadding: .lerp(fieldPadding, other.fieldPadding, t)!,
       curve: t < 0.5 ? curve : other.curve,
       duration: lerpDuration(duration, other.duration, t),
     );

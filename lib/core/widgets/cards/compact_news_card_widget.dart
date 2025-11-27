@@ -29,24 +29,24 @@ class CompactNewsCardWidget extends StatelessWidget
     return TouchableWidget(
       onPressed: onPressed,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           HeaderWidget(
             user: news.ownerUsername,
             publishedAt: news.publishedAt,
           ),
-          const SpacerWidget(size: SpacerWidgetSizes.small),
+          const SpacerWidget(size: .small),
           CardWidget(
-            width: double.infinity,
+            width: .infinity,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: .start,
               children: [
                 TextWidget(
                   news.title!,
                   maxLines: 4,
-                  size: TextWidgetSizes.titleMedium,
+                  size: .titleMedium,
                 ),
-                const SpacerWidget(size: SpacerWidgetSizes.small),
+                const SpacerWidget(size: .small),
                 ActionsWidget(news: news, color: colors.textAlt),
               ],
             ),

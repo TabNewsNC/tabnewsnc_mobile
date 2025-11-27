@@ -3,7 +3,7 @@ import 'package:tabnews/core/domain/entities/favorite_entity.dart';
 import 'package:tabnews/modules/favorite/favorite_usecases.dart';
 
 class FavoritePageController extends GetxController {
-  final _favoriteUsecases = Get.find<FavoriteUsecases>();
+  final FavoriteUsecases _favoriteUsecases = Get.find<FavoriteUsecases>();
 
   final Rx<bool> _isLoading = Rx(false);
   final Rx<List<FavoriteEntity>> _favorites = Rx([]);

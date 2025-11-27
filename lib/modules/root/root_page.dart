@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ionicons/ionicons.dart';
+// import 'package:ionicons/ionicons.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnews/core/widgets/button/fab_button_widget.dart';
+// import 'package:tabnews/core/widgets/button/fab_button_widget.dart';
 import 'package:tabnews/core/widgets/navbar_widget.dart';
 import 'package:tabnews/core/widgets/page_widget.dart';
 import 'package:tabnews/modules/favorite/presentation/favorite_page.dart';
@@ -15,16 +15,16 @@ class RootPage extends GetView<RootPageController> {
   @override
   Widget build(BuildContext context) {
     return PageWidget(
-      padding: EdgeInsets.zero,
+      padding: .zero,
       body: PageView(
         controller: controller.pageController,
         onPageChanged: (value) => controller.current = value,
         children: const [HomePage(), FavoritePage()],
       ),
-      floatingActionButton: Obx(() {
-        if (controller.current != 0) return const SizedBox.shrink();
-        return const FabButtonWidget(icon: Ionicons.add_outline);
-      }),
+      // floatingActionButton: Obx(() {
+      //   if (controller.current != 0) return const SizedBox.shrink();
+      //   return const FabButtonWidget(icon: Ionicons.add_outline);
+      // }),
       bottomNavigationBar: const _NavBarWidget(),
     );
   }

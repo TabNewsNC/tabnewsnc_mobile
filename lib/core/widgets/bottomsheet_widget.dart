@@ -17,14 +17,14 @@ class BottomSheetWidget extends StatelessWidget with ThemeMixin {
     final metrics = getMetrics();
 
     return CardWidget(
-      width: double.infinity,
+      width: .infinity,
       border: Border(top: metrics.border),
-      padding: EdgeInsets.all(metrics.medium).copyWith(top: metrics.small),
+      padding: .all(metrics.medium).copyWith(top: metrics.small),
       child: SafeAreaWidget(
         bottom: true,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: .min,
+          crossAxisAlignment: .start,
           children: [
             const _HandleWidget(),
             const SpacerWidget(),
@@ -49,7 +49,7 @@ class _HandleWidget extends StatelessWidget with ThemeMixin {
         height: 4,
         decoration: BoxDecoration(
           color: colors.border,
-          borderRadius: BorderRadius.circular(4),
+          borderRadius: .circular(4),
         ),
       ),
     );

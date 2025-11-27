@@ -42,12 +42,12 @@ class IconButtonWidget extends StatelessWidget with ThemeMixin {
       visible: label != null,
       replacement: iconWidget,
       child: Row(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: .min,
         children: [
           iconWidget,
           const SpacerWidget(
-            direction: Axis.horizontal,
-            size: SpacerWidgetSizes.small,
+            size: .small,
+            direction: .horizontal,
           ),
           if (label != null) TextWidget(label!, color: fgColor),
         ],
@@ -60,11 +60,11 @@ class IconButtonWidget extends StatelessWidget with ThemeMixin {
         visible: isFilled,
         replacement: child,
         child: Container(
-          padding: padding ?? EdgeInsets.all(metrics.medium),
+          padding: padding ?? .all(metrics.medium),
           decoration: BoxDecoration(
             color: bgColor ?? colors.primary,
-            border: Border.fromBorderSide(metrics.border),
-            borderRadius: BorderRadius.all(metrics.radius),
+            borderRadius: .all(metrics.radius),
+            border: .fromBorderSide(metrics.border),
           ),
           child: child,
         ),

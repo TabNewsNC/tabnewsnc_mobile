@@ -57,7 +57,7 @@ class _AppBarWidgetState extends State<AppBarWidget> with ThemeMixin {
 
     var padding = EdgeInsets.all(metrics.medium);
     if (Platform.isIOS) {
-      padding = EdgeInsets.symmetric(
+      padding = .symmetric(
         vertical: metrics.small,
         horizontal: metrics.medium,
       ).copyWith(bottom: metrics.medium);
@@ -71,19 +71,19 @@ class _AppBarWidgetState extends State<AppBarWidget> with ThemeMixin {
         child: SafeAreaWidget(
           top: true,
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: .end,
+            mainAxisAlignment: .spaceBetween,
             children: [
               if (widget.showLeading) const _LeadingWidget(),
               if (widget.title != null)
                 TextWidget(
                   widget.title!,
+                  size: .headlineLarge,
                   color: colors.onSecondary,
-                  size: TextWidgetSizes.headlineLarge,
                 ),
               WrapWidget(
-                direction: Axis.horizontal,
-                alignment: WrapAlignment.end,
+                alignment: .end,
+                direction: .horizontal,
                 children: widget.actions,
               ),
             ],

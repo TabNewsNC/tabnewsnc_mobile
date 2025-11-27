@@ -32,11 +32,10 @@ class CardWidget extends StatelessWidget with ThemeMixin {
       height: height,
       decoration: BoxDecoration(
         color: color ?? colors.surface,
-        border: border ??
-            Border.fromBorderSide(
-              metrics.card.haveBorder ? metrics.border : BorderSide.none,
-            ),
-        borderRadius: borderRadius ?? BorderRadius.all(metrics.radius),
+        border:
+            border ??
+            .fromBorderSide(metrics.card.haveBorder ? metrics.border : .none),
+        borderRadius: borderRadius ?? .all(metrics.radius),
       ),
       child: PaddingWidget(
         padding: padding ?? metrics.card.padding,

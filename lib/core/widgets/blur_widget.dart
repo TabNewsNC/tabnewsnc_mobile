@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:tabnews/core/mixin/theme_mixin.dart';
 
@@ -23,7 +21,7 @@ class BlurWidget extends StatelessWidget with ThemeMixin {
       return ClipRRect(
         borderRadius: borderRadius,
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: metrics.blur, sigmaY: metrics.blur),
+          filter: .blur(sigmaX: metrics.blur, sigmaY: metrics.blur),
           child: child,
         ),
       );

@@ -2,7 +2,7 @@ import 'package:dart_mappable/dart_mappable.dart';
 
 part 'favorite_entity.mapper.dart';
 
-@MappableClass(caseStyle: CaseStyle.snakeCase)
+@MappableClass(caseStyle: .snakeCase)
 class FavoriteEntity with FavoriteEntityMappable {
   const FavoriteEntity({
     required this.id,

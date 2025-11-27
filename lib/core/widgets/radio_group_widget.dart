@@ -21,7 +21,7 @@ class _RadioGroupWidgetState<T> extends State<RadioGroupWidget<T>> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: List.generate(widget.items.length, (index) {
+      children: .generate(widget.items.length, (index) {
         final item = widget.items[index];
         final isActive = item.value == widget.selected;
         return RadioButtonWidget(

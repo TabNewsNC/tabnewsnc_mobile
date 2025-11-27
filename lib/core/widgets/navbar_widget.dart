@@ -25,7 +25,7 @@ class NavBarWidget extends StatelessWidget with ThemeMixin {
 
     return BlurWidget(
       child: Container(
-        padding: EdgeInsets.symmetric(
+        padding: .symmetric(
           vertical: metrics.small,
           horizontal: metrics.medium,
         ),
@@ -69,8 +69,8 @@ class _ChildWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: List.generate(
+      mainAxisAlignment: .spaceEvenly,
+      children: .generate(
         items.length,
         (index) {
           final item = items[index];
@@ -113,7 +113,7 @@ class _NavBarItemWidget extends StatelessWidget with ThemeMixin {
     return TouchableWidget(
       onPressed: onPressed,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
+        mainAxisSize: .min,
         children: [
           IconWidget(icon, color: color, size: metrics.icon * 1.1),
           TextWidget(item.label, size: size, color: color),

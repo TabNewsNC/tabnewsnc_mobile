@@ -28,26 +28,26 @@ class FavoriteNewsCardWidget extends StatelessWidget with ThemeMixin {
     return TouchableWidget(
       onPressed: onPressed,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           HeaderWidget(
             user: favorite.ownerUsername,
             publishedAt: favorite.publishedAt,
           ),
-          const SpacerWidget(size: SpacerWidgetSizes.small),
+          const SpacerWidget(size: .small),
           CardWidget(
-            width: double.infinity,
+            width: .infinity,
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: .start,
               children: [
                 TextWidget(
                   favorite.title,
                   maxLines: 4,
-                  size: TextWidgetSizes.titleMedium,
+                  size: .titleMedium,
                 ),
-                const SpacerWidget(size: SpacerWidgetSizes.small),
+                const SpacerWidget(size: .small),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
+                  mainAxisAlignment: .end,
                   children: [
                     IconButtonWidget(
                       fgColor: colors.primary,

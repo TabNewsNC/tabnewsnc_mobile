@@ -16,7 +16,7 @@ class MarkdownToolsWidget extends StatelessWidget {
     const iconSize = 21.0;
 
     return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+      scrollDirection: .horizontal,
       child: Row(
         children: [
           const IconButtonWidget(
@@ -24,7 +24,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             iconSize: iconSize,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.format_bold_outlined,
@@ -32,7 +32,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.bold,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.format_italic_outlined,
@@ -40,7 +40,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.italic,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.link_outlined,
@@ -48,7 +48,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.link,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.format_list_bulleted_outlined,
@@ -56,7 +56,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.bulletedList,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.format_list_numbered_outlined,
@@ -64,7 +64,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.numberedList,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.format_quote_outlined,
@@ -72,7 +72,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.quote,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.strikethrough_s_outlined,
@@ -80,7 +80,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.strikethrough,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.code_outlined,
@@ -88,7 +88,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.code,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.check_box_outlined,
@@ -96,7 +96,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.checkbox,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.grid_on_outlined,
@@ -104,7 +104,7 @@ class MarkdownToolsWidget extends StatelessWidget {
             onPressed: editor.grid,
           ),
           const SpacerWidget(
-            direction: Axis.horizontal,
+            direction: .horizontal,
           ),
           IconButtonWidget(
             icon: Icons.image_outlined,

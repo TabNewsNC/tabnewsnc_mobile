@@ -31,23 +31,23 @@ class DetailedNewsCardWidget extends StatelessWidget
     if (news.title != null) data = '# ${news.title} \n ${news.body}';
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         HeaderWidget(
           user: news.ownerUsername,
           publishedAt: news.publishedAt,
         ),
-        const SpacerWidget(size: SpacerWidgetSizes.small),
+        const SpacerWidget(size: .small),
         CardWidget(
-          width: double.infinity,
+          width: .infinity,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: .start,
             children: [
               MarkdownViewerWidget(data: data),
             ],
           ),
         ),
-        const SpacerWidget(size: SpacerWidgetSizes.small),
+        const SpacerWidget(size: .small),
         ActionsWidget(
           news: news,
           color: colors.text,

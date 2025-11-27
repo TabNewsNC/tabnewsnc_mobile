@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:solar_icons/solar_icons.dart';
 import 'package:tabnews/core/domain/entities/favorite_entity.dart';
 import 'package:tabnews/core/routes/app_routes.dart';
 import 'package:tabnews/core/widgets/appbar_widget.dart';
@@ -23,7 +22,6 @@ class FavoritePage extends GetView<FavoritePageController> {
       return PageWidget(
         isLoading: isLoading,
         isEmpty: favorites.isEmpty,
-        emptyIcon: SolarIconsOutline.stars1,
         emptyText: 'Não há favoritos salvos!',
         appBar: AppBarWidget(
           title: 'Favoritos',
@@ -55,7 +53,7 @@ class _ContentWidget extends StatelessWidget {
     return ListView.separated(
       controller: scrollController,
       itemCount: favorites.length,
-      separatorBuilder: (_, __) => const SpacerWidget(),
+      separatorBuilder: (_, _) => const SpacerWidget(),
       itemBuilder: (_, index) {
         final item = favorites[index];
         final params = {

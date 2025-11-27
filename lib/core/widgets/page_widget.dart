@@ -10,7 +10,7 @@ class PageWidget extends StatelessWidget with ThemeMixin {
     this.isEmpty = false,
     this.isLoading = false,
     this.emptyText = 'Não há conteúdo',
-    this.appBarSize = const Size.fromHeight(100),
+    this.appBarSize = const .fromHeight(100),
     this.emptyIcon = SolarIconsOutline.notesMinimalistic,
     this.body,
     this.child,
@@ -41,7 +41,7 @@ class PageWidget extends StatelessWidget with ThemeMixin {
         child: CustomScrollView(
           anchor: anchor,
           slivers: slivers,
-          clipBehavior: Clip.none,
+          clipBehavior: .none,
           controller: scrollController,
         ),
       ),
@@ -63,19 +63,19 @@ class PageWidget extends StatelessWidget with ThemeMixin {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
+      padding: .only(
         bottom: MediaQuery.of(context).viewInsets.bottom,
       ),
       child: Scaffold(
         extendBody: true,
         extendBodyBehindAppBar: true,
         resizeToAvoidBottomInset: true,
-        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+        floatingActionButtonLocation: .endFloat,
         appBar: appBar != null
             ? PreferredSize(preferredSize: appBarSize, child: appBar!)
             : null,
         body: Visibility(
-          visible: isEmpty == false,
+          visible: !isEmpty,
           replacement: _NoContentWidget(icon: emptyIcon, text: emptyText),
           child: _ContentWidget(
             body: body,
@@ -109,7 +109,7 @@ class _ContentWidget extends StatelessWidget with ThemeMixin {
     final metrics = getMetrics();
 
     return Padding(
-      padding: padding ?? EdgeInsets.symmetric(horizontal: metrics.medium),
+      padding: padding ?? .symmetric(horizontal: metrics.medium),
       child: Visibility(
         visible: isLoading,
         replacement: body ?? child ?? const SizedBox(),
@@ -132,10 +132,10 @@ class _NoContentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: .center,
         children: [
           IconWidget(icon),
-          const SpacerWidget(size: SpacerWidgetSizes.small),
+          const SpacerWidget(size: .small),
           TextWidget(text),
         ],
       ),

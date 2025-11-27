@@ -15,22 +15,22 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     namespace = "br.com.softyes.tabnews"
-    compileSdk = 35 //flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973" //flutter.ndkVersion
+    compileSdk = 36 //flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 
     defaultConfig {
         applicationId = "br.com.softyes.tabnews"
-        minSdk = 22 //flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
+        minSdk = flutter.minSdkVersion //flutter.minSdkVersion
+        targetSdk = 36 //flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
