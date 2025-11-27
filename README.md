@@ -1,4 +1,4 @@
-<img width="100" height="100" src="assets/icon.png" alt="app logo">
+<img width="100" height="100" src="docs/logo.png" alt="project logo">
 
 # TabNews Client
 
@@ -49,21 +49,21 @@ respectivos proprietários.
 <table>
   <tr>
     <td>
-      <img src="readme/artigos.jpg" alt="" width="260px" />
+      <img src="docs/artigos.jpg" alt="" width="260px" />
     </td>
     <td>
-      <img src="readme/filtros.jpg" alt="" width="260px" />
+      <img src="docs/filtros.jpg" alt="" width="260px" />
     </td>
     <td>
-      <img src="readme/artigo.jpg" alt="" width="260px" />
+      <img src="docs/artigo.jpg" alt="" width="260px" />
     </td>
   </tr>
   <tr>
     <td>
-      <img src="readme/respostas.jpg" alt="" width="260px" />
+      <img src="docs/respostas.jpg" alt="" width="260px" />
     </td>
     <td>
-      <img src="readme/favoritos.jpg" alt="" width="260px" />
+      <img src="docs/favoritos.jpg" alt="" width="260px" />
     </td>
   </tr>
 </table>
