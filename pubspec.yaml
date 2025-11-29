@@ -1,9 +1,9 @@
 name: tabnews
-description: "Cliente para visualizar e interagir com as notícias/artigos publicados no TabNews."
+description: "Cliente para visualizar e interagir com as notícias/artigos publicados no TabNews"
 
 publish_to: "none"
 homepage: https://softyes.com.br
-repository: https://github.com/softyesti/tabnews_client
+repository: https://github.com/TabNewsNC/tabnewsnc_mobile
 
 version: 0.3.1+4
 
@@ -29,42 +29,21 @@ dependencies:
   hive: ^2.2.3
   path_provider: ^2.1.4
   share_plus: ^12.0.1
+  icons_launcher: ^3.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.4.6
   flutter_lints: ^6.0.0
   very_good_analysis: ^10.0.0
-  dart_mappable_builder: ^4.0.1
-  build_runner: ^2.4.6
-  flutter_launcher_icons: ^0.14.3
   flutter_native_splash: ^2.3.13
+  dart_mappable_builder: ^4.0.1
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
 
   assets:
     - assets/
-
-flutter_launcher_icons:
-  image_path: "assets/icon.png"
-  ios: true
-  remove_alpha_ios: true
-  android: "launcher_icon"
-  adaptive_icon_foreground: "assets/adaptive_icon.png"
-  adaptive_icon_background: "assets/adaptive_icon_bg.png"
-  min_sdk_android: 21
-  web:
-    generate: false
-    image_path: "assets/icon.png"
-    background_color: "#0D1117"
-    theme_color: "#0D1117"
-
-flutter_native_splash:
-  color: "#0D1117"
-  android: true
-  ios: true
-  web: true
-  android_12:
-    branding: assets/branding.png

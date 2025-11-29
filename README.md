@@ -1,6 +1,6 @@
 <img width="100" height="100" src="docs/logo.png" alt="project logo">
 
-# TabNews Client
+# TabNews | Mobile Client
 
 Cliente mobile construído em Flutter para visualizar e interagir com as
 notícias/artigos publicados no [TabNews](https://tabnews.com.br).

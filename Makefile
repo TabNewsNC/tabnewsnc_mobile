@@ -10,7 +10,8 @@ android_build:
 
 icons:
 	@echo "Generating launcher icons"
-	@fvm flutter pub run flutter_launcher_icons
+	@fvm dart run icons_launcher:create
+	@fvm dart run flutter_launcher_icons
 
 splash:
 	@echo "Generating splash screen"
@@ -22,6 +23,7 @@ runner:
 
 upgrade:
 	@echo "Upgrading project"
+	@fvm flutter clean
 	@fvm flutter pub get
 	@fvm flutter pub upgrade
 	@fvm flutter pub upgrade --major-versions
