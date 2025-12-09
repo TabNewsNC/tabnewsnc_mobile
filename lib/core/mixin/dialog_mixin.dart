@@ -1,8 +1,11 @@
+//
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:tabnewsnc/core/theme/extensions/theme_metrics_extension.dart';
 import 'package:tabnewsnc/core/widgets/bottomsheet_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 mixin DialogMixin {
   Future<void> openBottomSheet({

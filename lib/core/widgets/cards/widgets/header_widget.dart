@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/datetime_mixin.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide TextWidget;
 
 class HeaderWidget extends StatelessWidget with ThemeMixin, DateTimeMixin {
   const HeaderWidget({
@@ -15,14 +14,14 @@ class HeaderWidget extends StatelessWidget with ThemeMixin, DateTimeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final fgColor = colors.textAlt;
+    final colors = getThemeColors(context);
+    final fgColor = colors.onBackgroundAlt;
 
     return Row(
       children: [
         TextWidget(user, color: colors.primary),
         TextWidget(' • ', color: fgColor),
-        TextWidget(getRelativeTime(publishedAt), color: fgColor),
+        TextWidget(toRelativeTime(publishedAt), color: fgColor),
       ],
     );
   }

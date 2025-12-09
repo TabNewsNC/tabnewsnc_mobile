@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/padding_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class CardWidget extends StatelessWidget with ThemeMixin {
   const CardWidget({
@@ -24,8 +24,7 @@ class CardWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     return Container(
       width: width,
@@ -34,11 +33,14 @@ class CardWidget extends StatelessWidget with ThemeMixin {
         color: color ?? colors.surface,
         border:
             border ??
-            .fromBorderSide(metrics.card.haveBorder ? metrics.border : .none),
-        borderRadius: borderRadius ?? .all(metrics.radius),
+            Border.all(
+              color: colors.border,
+              width: metrics.border,
+            ),
+        borderRadius: borderRadius ?? .circular(metrics.radius),
       ),
       child: PaddingWidget(
-        padding: padding ?? metrics.card.padding,
+        padding: padding ?? EdgeInsets.all(metrics.small),
         child: child,
       ),
     );

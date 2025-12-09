@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/blur_widget.dart';
 import 'package:tabnewsnc/core/widgets/icon_widget.dart';
 import 'package:tabnewsnc/core/widgets/safe_area_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
 import 'package:tabnewsnc/core/widgets/touchable_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide IconWidget, TextWidget;
 
 class NavBarWidget extends StatelessWidget with ThemeMixin {
   const NavBarWidget({
@@ -20,8 +20,7 @@ class NavBarWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     return BlurWidget(
       child: Container(
@@ -98,11 +97,10 @@ class _NavBarItemWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     var icon = item.icon;
-    var color = colors.textAlt;
+    var color = colors.onBackgroundAlt;
     const size = TextWidgetSizes.bodySmall;
 
     if (isActive) {

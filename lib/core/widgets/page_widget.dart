@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/icon_widget.dart';
 import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide IconWidget, TextWidget;
 
 class PageWidget extends StatelessWidget with ThemeMixin {
   const PageWidget({
@@ -106,7 +106,7 @@ class _ContentWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final metrics = getMetrics();
+    final metrics = getThemeMetrics(context);
 
     return Padding(
       padding: padding ?? .symmetric(horizontal: metrics.medium),

@@ -7,7 +7,7 @@ import 'package:tabnewsnc/core/bindings/initial_binding.dart';
 import 'package:tabnewsnc/core/drivers/storage_driver.dart';
 import 'package:tabnewsnc/core/routes/app_pages.dart';
 import 'package:tabnewsnc/core/routes/app_routes.dart';
-import 'package:tabnewsnc/core/theme/app_theme.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,8 +16,21 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<StatefulWidget> createState() => _MyAppState();
+}
+
+final class _MyAppState extends State<MyApp> {
+  late final DefaultAppTheme _theme;
+
+  @override
+  void initState() {
+    super.initState();
+    _theme = const DefaultAppTheme();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +39,8 @@ class MyApp extends StatelessWidget {
       initialBinding: InitialBinding(),
       initialRoute: AppRoutes.initial,
       getPages: AppPages.pages,
-      theme: const AppTheme(isDark: false, colors: .modern).get(),
-      darkTheme: const AppTheme(isDark: true, colors: .modern).get(),
+      theme: _theme.light,
+      darkTheme: _theme.dark,
       debugShowCheckedModeBanner: false,
       locale: const Locale('pt', 'BR'),
       builder: (context, child) {
@@ -55,7 +68,7 @@ void _setSystemUI([BuildContext? context]) {
       brightness = .dark;
     case .dark:
       brightness = .light;
-    default:
+    case null:
       brightness = null;
   }
 

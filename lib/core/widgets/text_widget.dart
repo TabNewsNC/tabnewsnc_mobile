@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class TextWidget extends StatelessWidget with ThemeMixin {
   const TextWidget(
@@ -16,9 +16,9 @@ class TextWidget extends StatelessWidget with ThemeMixin {
   final Color? color;
 
   @override
-  Widget build(Object context) {
-    final theme = getTheme();
-    final colors = getColors();
+  Widget build(BuildContext context) {
+    final theme = getThemeData(context);
+    final colors = getThemeColors(context);
 
     late TextStyle ts;
     switch (size) {
@@ -46,7 +46,7 @@ class TextWidget extends StatelessWidget with ThemeMixin {
       text,
       maxLines: maxLines,
       overflow: .ellipsis,
-      style: ts.copyWith(color: color ?? colors.text),
+      style: ts.copyWith(color: color ?? colors.onBackground),
     );
   }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/icon_widget.dart';
 import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
 import 'package:tabnewsnc/core/widgets/touchable_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide IconWidget, TextWidget;
 
 class IconButtonWidget extends StatelessWidget with ThemeMixin {
   const IconButtonWidget({
@@ -29,8 +29,7 @@ class IconButtonWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     final iconWidget = IconWidget(
       icon,
@@ -63,8 +62,8 @@ class IconButtonWidget extends StatelessWidget with ThemeMixin {
           padding: padding ?? .all(metrics.medium),
           decoration: BoxDecoration(
             color: bgColor ?? colors.primary,
-            borderRadius: .all(metrics.radius),
-            border: .fromBorderSide(metrics.border),
+            borderRadius: .circular(metrics.radius),
+            border: .all(color: colors.border, width: metrics.border),
           ),
           child: child,
         ),

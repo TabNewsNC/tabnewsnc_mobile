@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/blur_widget.dart';
 import 'package:tabnewsnc/core/widgets/button/button_widget.dart';
 import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
@@ -10,19 +8,20 @@ import 'package:tabnewsnc/core/widgets/markdown/markdown_editor.dart';
 import 'package:tabnewsnc/core/widgets/markdown/markdown_tools_widget.dart';
 import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_field_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide CardWidget;
 
 class CommentDialogWidget extends StatelessWidget with ThemeMixin {
   const CommentDialogWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final metrics = getMetrics();
+    final metrics = getThemeMetrics(context);
     final viewInsets = MediaQuery.of(context).viewInsets;
 
     final controller = TextEditingController();
     final editor = MarkdownEditor(controller: controller);
 
-    final borderRadius = BorderRadius.all(metrics.radius).copyWith(
+    final borderRadius = BorderRadius.circular(metrics.radius).copyWith(
       bottomLeft: .zero,
       bottomRight: .zero,
     );

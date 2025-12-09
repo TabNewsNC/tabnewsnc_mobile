@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class WrapWidget extends StatelessWidget with ThemeMixin {
   const WrapWidget({
@@ -17,7 +17,7 @@ class WrapWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final metrics = getMetrics();
+    final metrics = getThemeMetrics(context);
 
     late double value;
     switch (spacing) {

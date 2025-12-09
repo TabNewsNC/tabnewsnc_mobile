@@ -2,13 +2,12 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ionicons/ionicons.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/blur_widget.dart';
 import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
 import 'package:tabnewsnc/core/widgets/safe_area_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
 import 'package:tabnewsnc/core/widgets/wrap_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide TextWidget;
 
 class AppBarWidget extends StatefulWidget {
   const AppBarWidget({
@@ -52,8 +51,7 @@ class _AppBarWidgetState extends State<AppBarWidget> with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     var padding = EdgeInsets.all(metrics.medium);
     if (Platform.isIOS) {
@@ -98,9 +96,8 @@ class _LeadingWidget extends StatelessWidget with ThemeMixin {
   const _LeadingWidget();
 
   @override
-  Widget build(Object context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+  Widget build(BuildContext context) {
+    final (colors, metrics) = getTheme(context);
 
     var icon = Ionicons.arrow_back_outline;
     if (Platform.isIOS) icon = Ionicons.chevron_back_outline;

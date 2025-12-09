@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ionicons/ionicons.dart';
 import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class ActionsWidget extends StatelessWidget with ThemeMixin {
   const ActionsWidget({
@@ -22,7 +21,7 @@ class ActionsWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final metrics = getMetrics();
+    final metrics = getThemeMetrics(context);
 
     return Wrap(
       spacing: metrics.medium,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class TextFieldWidget extends StatelessWidget with ThemeMixin {
   const TextFieldWidget({
@@ -21,13 +21,15 @@ class TextFieldWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final theme = getTheme();
-    final colors = getColors();
-    final metrics = getMetrics();
+    final theme = getThemeData(context);
+    final (colors, metrics) = getTheme(context);
 
     final border = OutlineInputBorder(
-      borderSide: metrics.border,
-      borderRadius: .all(metrics.radius / 1.2),
+      borderRadius: .circular(metrics.radius / 1.2),
+      borderSide: BorderSide(
+        color: colors.border,
+        width: metrics.border,
+      ),
     );
 
     return TextFormField(
@@ -49,7 +51,7 @@ class TextFieldWidget extends StatelessWidget with ThemeMixin {
         iconColor: colors.onSurface,
         prefixIconColor: colors.onSurface,
         suffixIconColor: colors.onSurface,
-        contentPadding: metrics.fieldPadding,
+        contentPadding: const .symmetric(vertical: 10, horizontal: 12),
         border: border,
         enabledBorder: border,
         focusedBorder: border.copyWith(

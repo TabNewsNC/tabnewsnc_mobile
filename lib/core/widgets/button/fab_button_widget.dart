@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class FabButtonWidget extends StatelessWidget with ThemeMixin {
   const FabButtonWidget({
@@ -14,15 +14,14 @@ class FabButtonWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     return IconButtonWidget(
       icon: icon,
       isFilled: true,
       onPressed: onPressed,
-      bgColor: colors.tertiary,
-      fgColor: colors.onTertiary,
+      bgColor: colors.secondary,
+      fgColor: colors.onSecondary,
       padding: .all(metrics.medium / 1.4),
     );
   }

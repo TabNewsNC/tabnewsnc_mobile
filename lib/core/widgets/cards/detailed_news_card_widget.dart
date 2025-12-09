@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
-import 'package:tabnewsnc/core/mixin/datetime_mixin.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/card_widget.dart';
 import 'package:tabnewsnc/core/widgets/cards/widgets/actions_widget.dart';
 import 'package:tabnewsnc/core/widgets/cards/widgets/header_widget.dart';
 import 'package:tabnewsnc/core/widgets/markdown/markdown_viewer_widget.dart';
 import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide CardWidget;
 
 class DetailedNewsCardWidget extends StatelessWidget
     with ThemeMixin, DateTimeMixin {
@@ -25,7 +24,7 @@ class DetailedNewsCardWidget extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
+    final colors = getThemeColors(context);
 
     var data = news.body!;
     if (news.title != null) data = '# ${news.title} \n ${news.body}';
@@ -50,7 +49,7 @@ class DetailedNewsCardWidget extends StatelessWidget
         const SpacerWidget(size: .small),
         ActionsWidget(
           news: news,
-          color: colors.text,
+          color: colors.onBackground,
           onUpperPressed: onUpperPressed,
           onDownPressed: onDownPressed,
           onCommentPressed: onCommentPressed,

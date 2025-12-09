@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart';
 
 class IconWidget extends StatelessWidget with ThemeMixin {
   const IconWidget(
@@ -15,9 +15,8 @@ class IconWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
-    final fgColor = color ?? colors.text;
+    final (colors, metrics) = getTheme(context);
+    final fgColor = color ?? colors.onBackground;
 
     return Icon(
       icon,

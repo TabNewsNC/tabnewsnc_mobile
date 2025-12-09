@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 import 'package:tabnewsnc/core/widgets/text_widget.dart';
 import 'package:tabnewsnc/core/widgets/touchable_widget.dart';
+import 'package:tabnewsnc_ui/tabnewsnc_ui.dart' hide TextWidget;
 
 class RadioButtonWidget extends StatelessWidget with ThemeMixin {
   const RadioButtonWidget({
@@ -18,8 +18,7 @@ class RadioButtonWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     var color = Colors.transparent;
     var size = TextWidgetSizes.bodyMedium;
@@ -33,10 +32,10 @@ class RadioButtonWidget extends StatelessWidget with ThemeMixin {
       child: Container(
         width: metrics.button.width,
         height: metrics.button.height,
-        padding: metrics.buttonPadding,
+        padding: const .symmetric(horizontal: 8),
         decoration: BoxDecoration(
           color: color,
-          borderRadius: .all(metrics.radius / 1.2),
+          borderRadius: .circular(metrics.radius / 1.2),
         ),
         child: Row(
           children: [
@@ -60,8 +59,7 @@ class _IndicatorWidget extends StatelessWidget with ThemeMixin {
 
   @override
   Widget build(BuildContext context) {
-    final colors = getColors();
-    final metrics = getMetrics();
+    final (colors, metrics) = getTheme(context);
 
     var color = colors.border;
     if (isActive) color = colors.primary;
@@ -73,7 +71,7 @@ class _IndicatorWidget extends StatelessWidget with ThemeMixin {
       decoration: BoxDecoration(
         color: color,
         borderRadius: .circular(metrics.icon),
-        border: .fromBorderSide(metrics.border.copyWith(color: color)),
+        border: .all(color: color, width: metrics.border),
       ),
       child: Visibility(
         visible: isActive,
