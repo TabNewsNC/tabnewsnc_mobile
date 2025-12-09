@@ -30,5 +30,5 @@
   "java.compile.nullAnalysis.mode": "automatic",
   "java.configuration.updateBuildConfiguration": "automatic",
   "makefile.configureOnOpen": false,
-  "dart.flutterSdkPath": ".fvm/versions/3.38.3"
+  "dart.flutterSdkPath": ".fvm/versions/3.38.4"
 }
