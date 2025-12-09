@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:tabnews/core/domain/entities/news_entity.dart';
+import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
 
 abstract class NewsDatasource {
   Future<NewsEntity?> getOne({

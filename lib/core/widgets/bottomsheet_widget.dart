@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/card_widget.dart';
-import 'package:tabnews/core/widgets/safe_area_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/card_widget.dart';
+import 'package:tabnewsnc/core/widgets/safe_area_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 
 class BottomSheetWidget extends StatelessWidget with ThemeMixin {
   const BottomSheetWidget({

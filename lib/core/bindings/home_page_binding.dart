@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:tabnews/modules/home/home_datasource.dart';
-import 'package:tabnews/modules/home/home_repository.dart';
-import 'package:tabnews/modules/home/home_usecases.dart';
-import 'package:tabnews/modules/home/presentation/home_page_controller.dart';
+import 'package:tabnewsnc/modules/home/home_datasource.dart';
+import 'package:tabnewsnc/modules/home/home_repository.dart';
+import 'package:tabnewsnc/modules/home/home_usecases.dart';
+import 'package:tabnewsnc/modules/home/presentation/home_page_controller.dart';
 
 class HomePageBinding implements Bindings {
   const HomePageBinding();

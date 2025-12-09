@@ -1,4 +1,4 @@
-name: tabnews
+name: tabnewsnc
 description: "Cliente para visualizar e interagir com as notícias/artigos publicados no TabNews"
 
 publish_to: "none"

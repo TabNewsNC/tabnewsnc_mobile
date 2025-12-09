@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/routes/app_routes.dart';
-import 'package:tabnews/core/widgets/appbar_widget.dart';
-import 'package:tabnews/core/widgets/cards/detailed_news_card_widget.dart';
-import 'package:tabnews/core/widgets/page_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
-import 'package:tabnews/modules/comment/presentation/controllers/comment_page_controller.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/routes/app_routes.dart';
+import 'package:tabnewsnc/core/widgets/appbar_widget.dart';
+import 'package:tabnewsnc/core/widgets/cards/detailed_news_card_widget.dart';
+import 'package:tabnewsnc/core/widgets/page_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/modules/comment/presentation/controllers/comment_page_controller.dart';
 
 class CommentPage extends StatefulWidget {
   const CommentPage({super.key});

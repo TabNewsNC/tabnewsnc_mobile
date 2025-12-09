@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:tabnews/core/domain/entities/news_entity.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
 
 class ActionsWidget extends StatelessWidget with ThemeMixin {
   const ActionsWidget({

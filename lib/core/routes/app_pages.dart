@@ -1,13 +1,13 @@
 import 'package:get/get.dart';
-import 'package:tabnews/core/bindings/comment_page_binding.dart';
-import 'package:tabnews/core/bindings/favorite_page_binding.dart';
-import 'package:tabnews/core/bindings/home_page_binding.dart';
-import 'package:tabnews/core/bindings/news_page_binding.dart';
-import 'package:tabnews/core/bindings/root_page_binding.dart';
-import 'package:tabnews/core/routes/app_routes.dart';
-import 'package:tabnews/modules/comment/presentation/comment_page.dart';
-import 'package:tabnews/modules/news/presentation/news_page.dart';
-import 'package:tabnews/modules/root/root_page.dart';
+import 'package:tabnewsnc/core/bindings/comment_page_binding.dart';
+import 'package:tabnewsnc/core/bindings/favorite_page_binding.dart';
+import 'package:tabnewsnc/core/bindings/home_page_binding.dart';
+import 'package:tabnewsnc/core/bindings/news_page_binding.dart';
+import 'package:tabnewsnc/core/bindings/root_page_binding.dart';
+import 'package:tabnewsnc/core/routes/app_routes.dart';
+import 'package:tabnewsnc/modules/comment/presentation/comment_page.dart';
+import 'package:tabnewsnc/modules/news/presentation/news_page.dart';
+import 'package:tabnewsnc/modules/root/root_page.dart';
 
 abstract class AppPages {
   static final pages = [

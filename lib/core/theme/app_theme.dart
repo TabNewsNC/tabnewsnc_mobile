@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tabnews/core/theme/extensions/theme_colors_extension.dart';
-import 'package:tabnews/core/theme/theme_colors.dart';
-import 'package:tabnews/core/theme/theme_metrics.dart';
+import 'package:tabnewsnc/core/theme/extensions/theme_colors_extension.dart';
+import 'package:tabnewsnc/core/theme/theme_colors.dart';
+import 'package:tabnewsnc/core/theme/theme_metrics.dart';
 
 enum AppThemeColors { modern, classical, black }
 

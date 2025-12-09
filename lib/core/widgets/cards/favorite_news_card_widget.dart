@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnews/core/domain/entities/favorite_entity.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
-import 'package:tabnews/core/widgets/card_widget.dart';
-import 'package:tabnews/core/widgets/cards/widgets/header_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
-import 'package:tabnews/core/widgets/touchable_widget.dart';
+import 'package:tabnewsnc/core/domain/entities/favorite_entity.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/card_widget.dart';
+import 'package:tabnewsnc/core/widgets/cards/widgets/header_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/widgets/touchable_widget.dart';
 
 class FavoriteNewsCardWidget extends StatelessWidget with ThemeMixin {
   const FavoriteNewsCardWidget({

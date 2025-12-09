@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/padding_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/padding_widget.dart';
 
 class CardWidget extends StatelessWidget with ThemeMixin {
   const CardWidget({

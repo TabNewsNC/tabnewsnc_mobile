@@ -3,12 +3,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/blur_widget.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
-import 'package:tabnews/core/widgets/safe_area_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
-import 'package:tabnews/core/widgets/wrap_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/blur_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/safe_area_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/widgets/wrap_widget.dart';
 
 class AppBarWidget extends StatefulWidget {
   const AppBarWidget({

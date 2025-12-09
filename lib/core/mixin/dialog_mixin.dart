@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:tabnews/core/theme/extensions/theme_metrics_extension.dart';
-import 'package:tabnews/core/widgets/bottomsheet_widget.dart';
+import 'package:tabnewsnc/core/theme/extensions/theme_metrics_extension.dart';
+import 'package:tabnewsnc/core/widgets/bottomsheet_widget.dart';
 
 mixin DialogMixin {
   Future<void> openBottomSheet({

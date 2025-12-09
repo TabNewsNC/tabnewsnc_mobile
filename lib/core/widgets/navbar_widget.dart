@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/blur_widget.dart';
-import 'package:tabnews/core/widgets/icon_widget.dart';
-import 'package:tabnews/core/widgets/safe_area_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
-import 'package:tabnews/core/widgets/touchable_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/blur_widget.dart';
+import 'package:tabnewsnc/core/widgets/icon_widget.dart';
+import 'package:tabnewsnc/core/widgets/safe_area_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/widgets/touchable_widget.dart';
 
 class NavBarWidget extends StatelessWidget with ThemeMixin {
   const NavBarWidget({

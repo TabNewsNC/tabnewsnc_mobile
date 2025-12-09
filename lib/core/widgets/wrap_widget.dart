@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
 
 class WrapWidget extends StatelessWidget with ThemeMixin {
   const WrapWidget({

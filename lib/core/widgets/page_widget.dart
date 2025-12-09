@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/icon_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/icon_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
 
 class PageWidget extends StatelessWidget with ThemeMixin {
   const PageWidget({

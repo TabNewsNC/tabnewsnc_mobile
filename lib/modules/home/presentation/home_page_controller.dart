@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:tabnews/core/domain/entities/news_entity.dart';
-import 'package:tabnews/core/domain/enums/news_filter_enum.dart';
-import 'package:tabnews/modules/home/home_usecases.dart';
+import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
+import 'package:tabnewsnc/core/domain/enums/news_filter_enum.dart';
+import 'package:tabnewsnc/modules/home/home_usecases.dart';
 
 class HomePageController extends GetxController {
   final HomeUsecases _feedUsecases = Get.find<HomeUsecases>();

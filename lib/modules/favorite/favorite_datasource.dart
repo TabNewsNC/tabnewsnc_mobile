@@ -1,4 +1,4 @@
-import 'package:tabnews/core/drivers/storage_driver.dart';
+import 'package:tabnewsnc/core/drivers/storage_driver.dart';
 
 abstract class FavoriteDatasource {
   Future<List<Map<String, dynamic>>> getAll();

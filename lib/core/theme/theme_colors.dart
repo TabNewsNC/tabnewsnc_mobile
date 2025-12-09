@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/theme/extensions/theme_colors_extension.dart';
+import 'package:tabnewsnc/core/theme/extensions/theme_colors_extension.dart';
 
 final class ThemeLightColors extends ThemeColors {
   const ThemeLightColors({

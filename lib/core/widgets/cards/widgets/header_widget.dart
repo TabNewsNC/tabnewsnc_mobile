@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/mixin/datetime_mixin.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/mixin/datetime_mixin.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
 
 class HeaderWidget extends StatelessWidget with ThemeMixin, DateTimeMixin {
   const HeaderWidget({

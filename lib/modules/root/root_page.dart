@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:ionicons/ionicons.dart';
 import 'package:solar_icons/solar_icons.dart';
-// import 'package:tabnews/core/widgets/button/fab_button_widget.dart';
-import 'package:tabnews/core/widgets/navbar_widget.dart';
-import 'package:tabnews/core/widgets/page_widget.dart';
-import 'package:tabnews/modules/favorite/presentation/favorite_page.dart';
-import 'package:tabnews/modules/home/presentation/home_page.dart';
-import 'package:tabnews/modules/root/root_page_controller.dart';
+// import 'package:tabnewsnc/core/widgets/button/fab_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/navbar_widget.dart';
+import 'package:tabnewsnc/core/widgets/page_widget.dart';
+import 'package:tabnewsnc/modules/favorite/presentation/favorite_page.dart';
+import 'package:tabnewsnc/modules/home/presentation/home_page.dart';
+import 'package:tabnewsnc/modules/root/root_page_controller.dart';
 
 class RootPage extends GetView<RootPageController> {
   const RootPage({super.key});

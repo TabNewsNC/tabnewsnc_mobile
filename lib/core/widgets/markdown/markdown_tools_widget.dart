@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
-import 'package:tabnews/core/widgets/markdown/markdown_editor.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/markdown/markdown_editor.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
 
 class MarkdownToolsWidget extends StatelessWidget {
   const MarkdownToolsWidget({

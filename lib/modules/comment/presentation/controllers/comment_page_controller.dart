@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:tabnews/core/domain/entities/news_entity.dart';
+import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
 
 class CommentPageController extends GetxController {
   // vars

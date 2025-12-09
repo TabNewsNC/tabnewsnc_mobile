@@ -1,16 +1,17 @@
 import 'package:get/get.dart';
-import 'package:tabnews/core/domain/entities/favorite_entity.dart';
-import 'package:tabnews/core/domain/entities/news_entity.dart';
-import 'package:tabnews/core/mixin/dialog_mixin.dart';
-import 'package:tabnews/modules/favorite/favorite_usecases.dart';
-import 'package:tabnews/modules/favorite/presentation/favorite_page_controller.dart';
-import 'package:tabnews/modules/news/news_usecases.dart';
+import 'package:tabnewsnc/core/domain/entities/favorite_entity.dart';
+import 'package:tabnewsnc/core/domain/entities/news_entity.dart';
+import 'package:tabnewsnc/core/mixin/dialog_mixin.dart';
+import 'package:tabnewsnc/modules/favorite/favorite_usecases.dart';
+import 'package:tabnewsnc/modules/favorite/presentation/favorite_page_controller.dart';
+import 'package:tabnewsnc/modules/news/news_usecases.dart';
 
 class NewsPageController extends GetxController with DialogMixin {
   final NewsUsecases _newsUsecases = Get.find<NewsUsecases>();
   final FavoriteUsecases _favoriteUsecases = Get.find<FavoriteUsecases>();
 
-  final FavoritePageController _favoritePageController = Get.find<FavoritePageController>();
+  final FavoritePageController _favoritePageController =
+      Get.find<FavoritePageController>();
 
   late String _id;
   late String _user;

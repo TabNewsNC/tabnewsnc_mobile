@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tabnews/core/domain/entities/favorite_entity.dart';
-import 'package:tabnews/core/routes/app_routes.dart';
-import 'package:tabnews/core/widgets/appbar_widget.dart';
-import 'package:tabnews/core/widgets/cards/favorite_news_card_widget.dart';
-import 'package:tabnews/core/widgets/page_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/modules/favorite/presentation/favorite_page_controller.dart';
+import 'package:tabnewsnc/core/domain/entities/favorite_entity.dart';
+import 'package:tabnewsnc/core/routes/app_routes.dart';
+import 'package:tabnewsnc/core/widgets/appbar_widget.dart';
+import 'package:tabnewsnc/core/widgets/cards/favorite_news_card_widget.dart';
+import 'package:tabnewsnc/core/widgets/page_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/modules/favorite/presentation/favorite_page_controller.dart';
 
 class FavoritePage extends GetView<FavoritePageController> {
   const FavoritePage({super.key});

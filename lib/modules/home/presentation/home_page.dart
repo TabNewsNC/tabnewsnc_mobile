@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnews/core/mixin/dialog_mixin.dart';
-import 'package:tabnews/core/routes/app_routes.dart';
-import 'package:tabnews/core/widgets/appbar_widget.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
-import 'package:tabnews/core/widgets/cards/compact_news_card_widget.dart';
-import 'package:tabnews/core/widgets/page_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/modules/home/presentation/dialogs/filter_bottomsheet_widget.dart';
-import 'package:tabnews/modules/home/presentation/home_page_controller.dart';
+import 'package:tabnewsnc/core/mixin/dialog_mixin.dart';
+import 'package:tabnewsnc/core/routes/app_routes.dart';
+import 'package:tabnewsnc/core/widgets/appbar_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/cards/compact_news_card_widget.dart';
+import 'package:tabnewsnc/core/widgets/page_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/modules/home/presentation/dialogs/filter_bottomsheet_widget.dart';
+import 'package:tabnewsnc/modules/home/presentation/home_page_controller.dart';
 
 class HomePage extends GetView<HomePageController> with DialogMixin {
   const HomePage({super.key});

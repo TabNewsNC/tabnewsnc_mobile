@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:tabnews/core/domain/entities/favorite_entity.dart';
-import 'package:tabnews/modules/favorite/favorite_usecases.dart';
+import 'package:tabnewsnc/core/domain/entities/favorite_entity.dart';
+import 'package:tabnewsnc/modules/favorite/favorite_usecases.dart';
 
 class FavoritePageController extends GetxController {
   final FavoriteUsecases _favoriteUsecases = Get.find<FavoriteUsecases>();

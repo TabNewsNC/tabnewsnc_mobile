@@ -1,5 +1,5 @@
 import 'package:dart_mappable/dart_mappable.dart';
-import 'package:tabnews/core/domain/hooks.dart';
+import 'package:tabnewsnc/core/domain/hooks.dart';
 
 part 'news_entity.mapper.dart';
 

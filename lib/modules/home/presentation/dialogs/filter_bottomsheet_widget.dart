@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:solar_icons/solar_icons.dart';
-import 'package:tabnews/core/domain/enums/news_filter_enum.dart';
-import 'package:tabnews/core/widgets/button/button_widget.dart';
-import 'package:tabnews/core/widgets/radio_group_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/core/widgets/text_widget.dart';
+import 'package:tabnewsnc/core/domain/enums/news_filter_enum.dart';
+import 'package:tabnewsnc/core/widgets/button/button_widget.dart';
+import 'package:tabnewsnc/core/widgets/radio_group_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_widget.dart';
 
 class FilterBottomSheetWidget extends StatefulWidget {
   const FilterBottomSheetWidget({

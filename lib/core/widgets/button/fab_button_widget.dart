@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
 
 class FabButtonWidget extends StatelessWidget with ThemeMixin {
   const FabButtonWidget({

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ionicons/ionicons.dart';
-import 'package:tabnews/core/mixin/theme_mixin.dart';
-import 'package:tabnews/core/widgets/blur_widget.dart';
-import 'package:tabnews/core/widgets/button/button_widget.dart';
-import 'package:tabnews/core/widgets/button/icon_button_widget.dart';
-import 'package:tabnews/core/widgets/card_widget.dart';
-import 'package:tabnews/core/widgets/markdown/markdown_editor.dart';
-import 'package:tabnews/core/widgets/markdown/markdown_tools_widget.dart';
-import 'package:tabnews/core/widgets/spacer_widget.dart';
-import 'package:tabnews/core/widgets/text_field_widget.dart';
+import 'package:tabnewsnc/core/mixin/theme_mixin.dart';
+import 'package:tabnewsnc/core/widgets/blur_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/button_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/icon_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/card_widget.dart';
+import 'package:tabnewsnc/core/widgets/markdown/markdown_editor.dart';
+import 'package:tabnewsnc/core/widgets/markdown/markdown_tools_widget.dart';
+import 'package:tabnewsnc/core/widgets/spacer_widget.dart';
+import 'package:tabnewsnc/core/widgets/text_field_widget.dart';
 
 class CommentDialogWidget extends StatelessWidget with ThemeMixin {
   const CommentDialogWidget({super.key});

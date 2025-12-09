@@ -3,11 +3,11 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:tabnews/core/bindings/initial_binding.dart';
-import 'package:tabnews/core/drivers/storage_driver.dart';
-import 'package:tabnews/core/routes/app_pages.dart';
-import 'package:tabnews/core/routes/app_routes.dart';
-import 'package:tabnews/core/theme/app_theme.dart';
+import 'package:tabnewsnc/core/bindings/initial_binding.dart';
+import 'package:tabnewsnc/core/drivers/storage_driver.dart';
+import 'package:tabnewsnc/core/routes/app_pages.dart';
+import 'package:tabnewsnc/core/routes/app_routes.dart';
+import 'package:tabnewsnc/core/theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

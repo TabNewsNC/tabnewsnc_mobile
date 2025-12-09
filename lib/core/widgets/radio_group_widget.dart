@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/widgets/button/radio_button_widget.dart';
+import 'package:tabnewsnc/core/widgets/button/radio_button_widget.dart';
 
 class RadioGroupWidget<T> extends StatefulWidget {
   const RadioGroupWidget({

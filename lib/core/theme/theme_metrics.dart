@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabnews/core/theme/extensions/theme_colors_extension.dart';
-import 'package:tabnews/core/theme/extensions/theme_metrics_extension.dart';
+import 'package:tabnewsnc/core/theme/extensions/theme_colors_extension.dart';
+import 'package:tabnewsnc/core/theme/extensions/theme_metrics_extension.dart';
 
 final class ThemeMetricsImpl extends ThemeMetrics {
   const ThemeMetricsImpl({

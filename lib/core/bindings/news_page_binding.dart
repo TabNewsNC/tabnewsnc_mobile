@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:tabnews/modules/news/news_datasource.dart';
-import 'package:tabnews/modules/news/news_repository.dart';
-import 'package:tabnews/modules/news/news_usecases.dart';
-import 'package:tabnews/modules/news/presentation/news_page_controller.dart';
+import 'package:tabnewsnc/modules/news/news_datasource.dart';
+import 'package:tabnewsnc/modules/news/news_repository.dart';
+import 'package:tabnewsnc/modules/news/news_usecases.dart';
+import 'package:tabnewsnc/modules/news/presentation/news_page_controller.dart';
 
 class NewsPageBinding implements Bindings {
   @override
