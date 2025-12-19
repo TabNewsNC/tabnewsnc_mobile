@@ -1,12 +1,8 @@
-.PHONY: android_build icons splash runner upgrade clean
+APP_VERSION=$$(grep '^version:' ./pubspec.yaml | sed -E 's/version:[[:space:]]*([0-9]+\.[0-9]+\.[0-9]+)\+[0-9]+/\1/')
 
-android_build:
-	@echo "Building Android release..."
-	@make clean
-	@mkdir -p dist/android
-	@fvm flutter build appbundle --release --obfuscate --split-debug-info=./build/android/debug-info
-	@cp ./build/app/outputs/bundle/release/app-release.aab ./dist/android/tabnews_release.aab
-	@cd ./build/app/intermediates/merged_native_libs/release/mergeReleaseNativeLibs/out/lib/ && zip -r ../../../../../../../../dist/android/tabnews_release_symbols.zip ./
+.PHONY: icons splash runner build upgrade clean
+
+default: build
 
 icons:
 	@echo "Generating launcher icons"
@@ -20,6 +16,14 @@ splash:
 runner:
 	@echo "Running build-runner"
 	@fvm dart run build_runner build -d
+
+build:
+	@echo "Building an Android release..."
+	@make clean
+	@mkdir -p dist/android/
+	@fvm flutter build appbundle --release --obfuscate --split-debug-info=./build/android/debug-info
+	@cp ./build/app/outputs/bundle/release/app-release.aab ./dist/android/tabnews_v${APP_VERSION}_android.aab
+	@cd ./build/app/intermediates/merged_native_libs/release/mergeReleaseNativeLibs/out/lib/ && zip -r ../../../../../../../../dist/android/tabnews_v${APP_VERSION}_android_symbols.zip ./
 
 upgrade:
 	@echo "Upgrading project"

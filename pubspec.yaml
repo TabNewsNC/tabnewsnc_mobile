@@ -5,7 +5,7 @@ publish_to: "none"
 homepage: https://softyes.com.br
 repository: https://github.com/TabNewsNC/tabnewsnc_mobile
 
-version: 0.4.0+5
+version: 0.3.1+2424031
 
 environment:
   sdk: ^3.10.3
@@ -31,9 +31,16 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_markdown: ^0.7.1
   tabnewsnc_ui:
-    path: ../tabnewsnc_ui
+    #version: ^0.1.1
+    git:
+      ref: 680f17e
+      #tag_pattern: v{{version}}
+      url: git@github.com:TabNewsNC/tabnewsnc_ui.git
   tabnewsnc_engine:
-    path: ../tabnewsnc_engine
+    version: ^0.1.0
+    git:
+      tag_pattern: v{{version}}
+      url: git@github.com:TabNewsNC/tabnewsnc_engine.git
 
 dev_dependencies:
   flutter_test:
