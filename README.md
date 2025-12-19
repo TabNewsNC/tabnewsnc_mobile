@@ -2,8 +2,9 @@
 
 # TabNews | Mobile Client
 
-Cliente mobile construído em Flutter para visualizar e interagir com as
-notícias/artigos publicados no [TabNews](https://tabnews.com.br).
+Cliente [TabNews](https://tabnews.com.br) para mobile construído em
+[Flutter](https://flutter.dev) para visualizar e interagir com as notícias e
+artigos publicados na plataforma.
 
 ## 🧑‍💻 Tecnologias
 
@@ -17,7 +18,7 @@ Veja as dependências do projeto em: [pubspec.yaml](./pubspec.yaml)
 ## 🖥️ Plataformas
 
 * IOS(12+) ✅
-* Android(5.1+|SDK22+) ✅
+* Android(5.1+|SDK24+) ✅
 
 ## 🧰 Recursos
 
