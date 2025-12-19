@@ -1,24 +1,31 @@
 # Changelog
 
+[TabNews](https://tabnews.com.br) client for mobile built in
+[Flutter](https://flutter.dev) to view and interact with news and articles
+published on the platform.
+
 ## 0.3.1
 
-* Melhorias no código
-* Atualização do framework
+* Framework update
+* Code improvements
+* Added the `tabnewsnc_ui` package
+* Improvements to the build process
+* Added the `tabnewsnc_engine` package
 
 ## 0.3.0
 
-* Temas claro e escuro
-* Visualização de posts
-* Compartilhamento de posts
-* Visualização de comentários
-* Contagem de tabcoins e comentários
-* Adição e remoção de posts favoritos
-* Filtragem por posts antigos, recentes ou relevantes
+* Post preview
+* Post sharing
+* Comment preview
+* Light and dark themes
+* Tabcoin and comment count
+* Adding and removing favorite posts
+* Filtering by old, recent, or relevant posts
 
 ## 0.2.0
 
-* Desenvolvimento ativo
+* Active development
 
 ## 0.1.0
 
-* Desenvolvimento ativo
+* Active development
